@@ -27,12 +27,12 @@ export const byState = (state = 'UT') => {
 export const mapping = () => {
   return Senators.map (Senator => {
     const senatorObj = {};
-      senatorObj.firstName = Senator.person.firstname;
-      senatorObj.lastName = Senator.person.lastname;
-      senatorObj.party = Senator.party;
-      senatorObj.gender = Senator.person.gender;
+    senatorObj.firstName = Senator.person.firstname;
+    senatorObj.lastName = Senator.person.lastname;
+    senatorObj.party = Senator.party;
+    senatorObj.gender = Senator.person.gender;
   
-      return senatorObj;
+    return senatorObj;
   });
 }
 
